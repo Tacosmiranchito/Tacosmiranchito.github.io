@@ -1,0 +1,308 @@
+ /*Body*/
+body{
+	
+	/*para colocar una imagen de fondo
+     background-image:url("../imagenes/foto fondo 2.png");*/
+	  background-color:#D8A0F4;
+	/*para que no se repita la foto
+	 background-repeat: no-repeat;*/
+	 
+	/*para ajustar el tamaño de la imagen
+	 background-size: 100% 100%;*/
+	 
+    /*para poner un color de fondo
+	  background-color: #D2B8F6;*/
+
+    /*font family es para el tipo de letra: si el pimero no lo encuentra coloca el segundo, si no el tercero*/
+	 font-family:"home";
+	 
+	/*font-size es para el tamaño, se expresa en pixeles*/
+	 font-size: 30px;
+	
+    /*color es para el color de las letras, puedes colocar un valor hexadecimal, el nombre del color o valores rbg*/
+	 color:#01040C;
+	 
+	 text-align:center;
+	  
+}
+
+hr{
+	/*border es para la linea, tamaño en pixeles, tipo de linea y color*/
+	border: 2px solid #01040C;
+	
+	/*border-radius es para el terminado de las orillas, el radio que tendra seexpresa en pixeles*/
+	border-radius: 2px
+	
+}
+
+p{
+	/*text-align se utiliza para alinear el texto por default estan alineados a la izquierda*/
+	text-align:justify;
+	font-size:30px;
+	color:#01040C;
+   /*background-color:#01040C;*/ 
+}
+table,td,tr{
+	border:3px solid;
+	border-color:#01040C;
+	text-align: center;
+	background-color:#F7C457
+	
+}
+
+th{
+	background-color:#F9D58A;
+	
+}
+
+ul{
+	list-style-type:circle;
+	list-style-position: inside;
+}
+
+ol{
+	/* Algunos de los valores de list-style-type son: lower-alpha; lower-roman; upper-alpha; upper-roman;
+	a,b,c,d,e,f  i,ii,iii,iv  A,B,C,D,E,F  I,II,III,IV*/
+	
+	list-style-type: upper-roman;
+	list-style-position: inside;
+}
+
+.pie{
+	text-align:center;
+	font-size:12px;
+    color:black;
+	font-family:home;;
+	font-weight:bold;
+}
+
+.text{
+	text-align:center;
+	font-size:20px;
+    color:black;
+	font-family: "bondoni", "Arial", "Lucida console";
+	font-weight:bold;
+}
+
+.table{
+	font-family:"home";
+	font-size:20px;
+	color:black;
+	text-align: center;
+}
+
+.title{
+     font-family: "sweet";
+	 font-size:40px;
+	 font-weight:bold;
+	 color:black;
+	 text-align:center;
+}
+
+.img-marque{
+	width:450px;
+	height:400px;
+}
+
+.botones{
+	width:75px;
+	height:75px;
+	border-radius:20%;
+}
+
+.img-table{
+	width:200px;
+	height:200px;
+}
+
+.otras-img{
+	width:500px;
+	height:300px;
+	border: double #F7C457;
+	border-radius:5%;
+}
+
+@font-face{
+	font-family: sweet;
+	src: url("../fuentes/Sweet Kitty.otf");
+}
+
+@font-face{
+	font-family: home;
+	src: url("../fuentes/Homemade Sausage.ttf");
+}
+
+/*
+.fuentegoogle{
+	font-family: "Delicius Handrawn", cursive;
+se pone el link url en la pagina que queramos que lleve esa letra, se pone junto a los otros "link rel"	
+}
+*/
+
+/*Uso de Divs*/
+/*Div o caja en el encabezado*/
+*{
+	margin:0px;
+	padding:0px;
+}
+
+div#top{
+	width:100%;
+	height:80px;
+	background-color:#7696DF;
+}
+
+div#principal{
+	margin:auto;
+	margin-top:5px;
+	width:80%;
+	height:500px;
+	background-color:#F2ABD2;
+}
+
+div#piep{
+	margin-top:5px;
+	width:100%;
+	height:100px;
+	background-color:#7696DF;
+}
+div#principal2{
+	margin:auto;
+	margin-top:5px;
+	width:80%;
+	height:900px;
+    background-color:#F2ABD2;
+	
+}
+div#principal6{
+	margin:auto;
+	margin-top:5px;
+	width:96%;
+	height:900px;
+	background-color:#F2ABD2;
+}
+
+div#principal4{
+	margin:auto;
+	margin-top:5px;
+	width:90%;
+	height:1500px;
+	background-color:#F2ABD2;
+}
+
+div#principal5{
+	margin:auto;
+	margin-top:5px;
+	width:90%;
+	height:1800px;
+	background-color:#F2ABD2;
+}
+
+.caja{
+	height:360px;
+	width:250px;
+	background:#7696DF;
+    border:1px solid #2E86C1;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+
+.caja:hover{
+	box-shadow: 0 0 5px #E5E7E9;
+	transform:scale(1.3);	
+}
+.Carrousel{
+    width:600px;
+    margin:auto;
+    box-sizing:border-box;
+}
+.conteCarrousel{
+    width:100%;
+    height:400px;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+.itemCarrousel{
+    position:relative;
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+.itemCarrouselTarjeta{
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+.itemCarrouselArrows{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px;
+    box-sizing:border-box;
+}
+.itemCarrouselArrows >i :hover{
+    cursor:pointer;
+}
+.conterCarrouselController{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.conterCarrouselController >a{
+    text-decoration:none;
+    font-size:32px;
+    color:grey;
+}
+.itemCarrouselArrows >a >i {
+    color:white;
+}
+.menu{
+height:75px;
+width:70px;
+text-align:center;
+display:inline-block;
+}
+
+.menu:hover{
+	box-shadow:0 0 5px #F2F3F4;
+	transform:scale (1.3);
+	border-radius:12px;
+
+}
+
+div#principaln{
+	margin:auto;
+	margin-top:5px;
+	width:70%;
+	height:500px;
+	background-color:#E79BB4;
+	}
+	
+	div#principal3{
+	margin:auto;
+	margin-top:5px;
+	width:80%;
+	height:1050px;
+    background-color:#CCD1D1;
+
+
+
+
+
+
+
+
+
+
+
+
+
